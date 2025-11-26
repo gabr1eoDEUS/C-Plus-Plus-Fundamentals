@@ -8,7 +8,7 @@ int main() {
 	cin >> notaTrabalho;
 	cout << "Digite a nota da prova: ";
 	cin >> notaProva;
-  cout << "--------------------\n";
+  	cout << "--------------------\n";
 	float notaFinal = (notaTrabalho * PESO_TRABALHO) + (notaProva * PESO_PROVA);
 	cout << "A nota final do aluno é: " << notaFinal << endl;
 	return 0;
