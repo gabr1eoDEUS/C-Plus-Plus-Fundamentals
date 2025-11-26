@@ -9,8 +9,7 @@ Este repositório é um diário de bordo e portfólio de consolidação da lingu
 
 ### Metodologia de Estudo
 
-* Aulas Teóricas: [Link da sua Playlist de C++](https://youtube.com/playlist?list=PLx4x_zx8csUjczg1qPHavU1vw1IkBcm40&si=VnL86wWUSsbG1_w_).
-* **Protocolo de Execução:** Toda aula teórica deve resultar em um **projeto prático** testado no VS Code e enviado ao GitHub. A execução é a única métrica de progresso.
+* Aulas Teóricas: [C++](https://youtube.com/playlist?list=PLx4x_zx8csUjczg1qPHavU1vw1IkBcm40&si=VnL86wWUSsbG1_w_).
 
 ### Estrutura do Projeto
 
