@@ -1,0 +1,28 @@
+1. Definição e Intenção
+O que é? Uma Estrutura de Dados é a organização especializada de dados para que eles possam ser acessados e modificados de forma eficiente.
+
+Decisão de Engenharia: A escolha correta da estrutura é o que define o desempenho (velocidade e consumo de memória) do seu programa.
+
+2. Classificação Principal das Estruturas
+Estruturas Estáticas:
+
+Característica: O tamanho é fixo e definido na compilação. Não pode mudar.
+
+Intenção: Usadas quando o tamanho da coleção é conhecido e invariável.
+
+Exemplo: Arrays (Vetores e Matrizes).
+
+Estruturas Dinâmicas:
+
+Característica: O tamanho é variável. Pode aumentar ou diminuir durante a execução.
+
+Intenção: Usadas quando o tamanho da coleção é desconhecido ou muda constantemente.
+
+Exemplo: Listas, Pilhas, Filas (e a classe std::vector do C++).
+
+3. Arrays (Estrutura Estática)
+Estrutura: É uma coleção de elementos do mesmo tipo armazenados em posições contíguas (uma ao lado da outra) na memória.
+
+Intenção: Proporcionar o acesso mais rápido a qualquer elemento, usando seu índice.
+
+Ponto Crítico (Estouro de Buffer): Tentar acessar um índice que não existe no Array causará um erro sério de invasão de memória (buffer overflow), um problema clássico de C/C++.
