@@ -1,0 +1,25 @@
+1. O que é um Algoritmo?
+Definição: É uma sequência finita e ordenada de instruções claras e não ambíguas, que visa resolver um problema específico ou realizar uma tarefa.
+
+Analogia (Importante): Pense em um Algoritmo como uma "Receita de Bolo" para o computador. Cada passo da receita deve ser executado em ordem e de forma precisa para garantir o resultado esperado.
+
+2. Componentes Essenciais
+Todo algoritmo (e, portanto, todo programa) deve ter três partes bem definidas:
+
+Entrada (Input): Os dados necessários para que o algoritmo comece a trabalhar (Ex: O raio de um círculo, as notas de um aluno).
+
+Processamento: O conjunto de ações e cálculos que transformam a Entrada na Saída (Ex: Multiplicar raio por Pi, calcular a média das notas).
+
+Saída (Output): O resultado final que resolve o problema (Ex: A área calculada, o status "Aprovado" ou "Reprovado").
+
+3. Lógica de Programação
+Conceito: É a habilidade de estruturar e organizar esses passos de forma coesa e racional, garantindo que o computador entenda e execute as instruções corretamente.
+
+Foco Principal: O programador deve resolver o problema logicamente antes de escrever qualquer código. A linguagem (C++, Python, etc.) é apenas a ferramenta que traduz essa lógica para a máquina.
+
+4. Características de um Bom Algoritmo
+Finito: Deve terminar em um número limitado de passos.
+
+Preciso: Cada instrução deve ser clara e não deve dar margem a diferentes interpretações.
+
+Eficaz: Deve resolver o problema para o qual foi projetado.
