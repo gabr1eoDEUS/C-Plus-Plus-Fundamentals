@@ -1,0 +1,33 @@
+1. O Comando de Saída (cout)
+Intenção: Exibir dados (textos, números, valores de variáveis) na tela (console).
+
+Ferramenta: std::cout (Console Output).
+
+2. O Operador de Inserção
+Operador: << (Dois sinais de "menor que").
+
+Intenção: É chamado de Operador de Inserção ou Operador de Fluxo de Saída. Ele "insere" o dado à sua direita no fluxo de saída (cout) que está à sua esquerda.
+
+Rigidez: O C++ permite encadeamento (Chain Calling). Você pode usar múltiplos operadores << na mesma linha para imprimir diferentes tipos de dados sequencialmente:
+
+Exemplo: std::cout << "O resultado é " << variavel_x << "!";
+
+3. Quebra de Linha (NewLine)
+Existem duas formas principais de quebrar a linha (ir para a próxima linha do console):
+
+std::endl (End Line)
+
+Intenção: Insere uma quebra de linha E força a limpeza do buffer de saída (garantindo que o que foi impresso apareça imediatamente na tela).
+
+Rigidez: Em programas grandes, forçar a limpeza do buffer com std::endl pode reduzir ligeiramente a performance.
+
+\n (Escape Sequence)
+
+Intenção: Insere apenas a quebra de linha, sem forçar a limpeza imediata do buffer.
+
+Rigidez: É o método preferido em C++ para performance, pois é mais rápido.
+
+4. Uso do std:: (Namespaces)
+Problema: cout é, na verdade, std::cout. O std:: indica que o comando cout pertence ao Namespace Padrão (std) do C++.
+
+Rigidez: Usar std:: explicitamente (std::cout, std::cin) é a forma mais rigorosa e segura de codificar. (O curso deve cobrir como usar using namespace std; mais tarde para simplificar, mas o uso explícito é o padrão de segurança).
