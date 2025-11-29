@@ -1,0 +1,28 @@
+1. Tipos de Ponto Flutuante (Decimais)
+Usados para armazenar números com casas decimais (números reais). A escolha do tipo é crucial para a precisão dos cálculos, já que o computador armazena esses valores como aproximações.
+
+float (Ponto Flutuante Simples):
+
+Intenção: Usado para economizar memória. Oferece cerca de 7 dígitos decimais de precisão.
+
+Rigidez: Evite para cálculos críticos (dinheiro, ciência). A falta de precisão pode levar a erros de arredondamento.
+
+double (Dupla Precisão):
+
+Intenção: Máxima precisão para a maioria das aplicações (15 a 16 dígitos decimais). Ocupa o dobro da memória do float.
+
+Rigidez: É o tipo padrão para números decimais. Use-o sempre que a precisão for importante.
+
+long double: Usado em cenários raros que exigem precisão ainda maior que o double.
+
+2. Inteiros de Alta Capacidade
+long e long long (Inteiro Longo):
+
+Intenção: Usado para armazenar números inteiros que excedem a capacidade máxima do int (4 bytes).
+
+long long: Tipo mais seguro para lidar com números inteiros extremamente grandes (geralmente 8 bytes), garantindo a maior faixa de valores.
+
+3. Rigidez: Aritmética Decimal e Comparações
+Regra de Ouro: Devido à forma como os computadores armazenam decimais (em base binária, por aproximação), NUNCA use float ou double para testar igualdade estrita (if (valor == 0.1)).
+
+Solução: Sempre compare valores decimais usando um intervalo de tolerância (margem de erro muito pequena).
