@@ -1,0 +1,25 @@
+Tipo String (Aula 22)
+1. A Natureza da std::string
+Definição: std::string é uma Classe (e, portanto, um Objeto), não um tipo primitivo.
+
+Intenção: Armazenar uma sequência de caracteres de tamanho variável. Ela gerencia automaticamente a alocação de memória, eliminando a necessidade de usar os arrays de char do C puro.
+
+Rigidez: Para usar std::string, você deve incluir o cabeçalho <string>.
+
+2. Sintaxe e Operações Básicas
+Declaração:
+
+C++
+
+#include <string> 
+// ...
+std::string nome = "João Silva"; 
+Concatenação: O operador + é sobrecarregado (reaproveitado) para unir duas strings.
+
+Exemplo: std::string nome_completo = "João" + " Silva";
+
+Tamanho: Use o método .length() (ou .size()) para saber quantos caracteres a string possui.
+
+Exemplo: int tamanho = nome.length();
+
+Regra de Ouro: Em C++ moderno, sempre use std::string para manipular texto, a menos que você precise de interoperabilidade direta com código C antigo.
