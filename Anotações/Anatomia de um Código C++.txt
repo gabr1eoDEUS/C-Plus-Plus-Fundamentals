@@ -1,0 +1,38 @@
+1. Estrutura Mínima (O Esqueleto do Código)
+Todo programa C++ funcional deve conter esta estrutura básica:
+
+C++
+
+#include <iostream>
+
+int main() {
+    // Corpo do programa
+    return 0; 
+}
+
+2. Componentes Explicados
+#include <iostream>
+
+Intenção: Informa ao compilador que o programa irá usar o sistema de I/O (Input/Output) padrão do C++.
+
+O que ele habilita: Permite o uso dos comandos std::cout (para escrever/imprimir) e std::cin (para ler/entrada de dados).
+
+int main()
+
+Intenção: É a função principal (ponto de entrada) do programa. O compilador sempre procura por main() para saber onde começar a execução.
+
+int: Indica que a função retornará um número inteiro.
+
+{} (Chaves)
+
+Intenção: Delimitam o Bloco de Código da função main(). Tudo o que está dentro das chaves ({...}) será executado em sequência.
+
+return 0;
+
+Intenção: Sinaliza o fim da execução da função main().
+
+Rigidez: Na programação C++, retornar 0 é a convenção para informar ao Sistema Operacional que o programa terminou com sucesso e sem erros. Qualquer outro número inteiro (diferente de zero) geralmente indica um tipo de erro ou falha na execução.
+
+; (Ponto e Vírgula)
+
+Rigidez: Em C++, o ponto e vírgula é o delimitador de comando (chamado de statement terminator). Quase todas as instruções devem terminar com um ponto e vírgula. (A exceção principal são estruturas como #include, if, while e blocos de código {}).
