@@ -1,0 +1,37 @@
+1. Conceito e Intenção
+Definição: Tipos Primitivos (ou Fundamentais) são os blocos de construção básicos do C++. A escolha do tipo define o tamanho em bytes reservado na memória e a faixa de valores que a variável pode armazenar.
+
+Rigidez: O C++ é tipado estaticamente, o que exige que você declare o tipo antes de usar a variável.
+
+2. Tipos de Números Inteiros (Sem Decimais)
+Usados para armazenar números inteiros. A principal diferença é o tamanho (capacidade):
+
+int (Integer):
+
+Intenção: É o tipo inteiro padrão e o mais comum. O sistema operacional costuma otimizar o processamento para esse tamanho (geralmente 4 bytes).
+
+Regra: Use int por padrão, a menos que você tenha uma necessidade específica de tamanho.
+
+short (Short Integer):
+
+Intenção: Usado para economizar memória quando se sabe que o valor nunca excederá um número pequeno (geralmente 2 bytes).
+
+3. Modificadores de Tipo (signed e unsigned)
+Os modificadores prefixam os tipos inteiros para alterar o intervalo de valores:
+
+signed (Com Sinal - Padrão): Permite valores positivos e negativos. O padrão se você não especificar.
+
+unsigned (Sem Sinal): Permite apenas valores positivos, dobrando a capacidade máxima positiva do tipo (o bit do sinal é usado para valor).
+
+Rigidez: Use unsigned quando souber que a variável nunca será negativa (ex: contagem de itens, idade, índices).
+
+4. Tipos de Caractere e Booleano
+char (Character):
+
+Intenção: Armazena um único caractere (letra, número, símbolo). Internamente, armazena seu código numérico ASCII (geralmente 1 byte).
+
+bool (Boolean):
+
+Intenção: Armazena apenas valores de verdade ou falsidade: true (1) ou false (0).
+
+Rigidez: Essencial para todas as decisões de Controle de Fluxo (if/else).
