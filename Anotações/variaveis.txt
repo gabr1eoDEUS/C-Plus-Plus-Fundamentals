@@ -1,0 +1,31 @@
+1. Conceito Fundamental de Variável
+Definição: Uma variável é um espaço nomeado e reservado na memória do computador, usado para armazenar um valor que pode mudar durante a execução do programa.
+
+Intenção: Facilitar o trabalho do programador. Em vez de usar um endereço de memória complexo (0x7FFD...), usamos um nome claro (ex: idade, salario).
+
+2. Sintaxe de Declaração
+A declaração de uma variável segue uma sintaxe rígida:
+
+TipoDeDado NomeDaVariavel = ValorInicial;
+
+TipoDeDado (Obrigatório): Define o tamanho do espaço reservado na memória e o tipo de valor que pode ser armazenado (ex: int, double, bool).
+
+NomeDaVariavel (Obrigatório): Deve ser único no escopo e seguir as regras de nomenclatura (ex: não pode começar com número, não pode ter espaço).
+
+ValorInicial (Recomendado): Atribuição de um valor no momento da declaração (inicialização).
+
+3. Inicialização vs. Atribuição
+Inicialização: É a primeira vez que você atribui um valor à variável, geralmente no momento da declaração.
+
+Exemplo: int idade = 25;
+
+Atribuição: É a mudança do valor da variável após ela ter sido declarada.
+
+Exemplo: idade = 26;
+
+Rigidez: Em C++, se uma variável for declarada sem inicialização (ex: int idade;), o valor inicial dela é lixo de memória (garbage). Isso é um risco de segurança e causa erros imprevisíveis. Sempre inicialize suas variáveis.
+
+4. Tipagem Estática (O Rigor do C++)
+C++ é Estaticamente Tipada: Uma vez que você declara uma variável de um tipo (ex: int), ela não pode mais mudar para outro tipo (ex: string).
+
+Intenção: Garante que o programa seja mais rápido e seguro, pois o compilador verifica todos os erros de tipo antes da execução.
