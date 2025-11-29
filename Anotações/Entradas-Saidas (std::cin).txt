@@ -1,0 +1,27 @@
+1. O Comando de Entrada (cin)
+Intenção: Receber dados (números, texto) digitados pelo usuário no console e armazená-los em uma variável.
+
+Ferramenta: std::cin (Console Input).
+
+2. O Operador de Extração
+Operador: >> (Dois sinais de "maior que").
+
+Intenção: É chamado de Operador de Extração ou Operador de Fluxo de Entrada. Ele extrai o dado digitado pelo usuário e o coloca dentro da variável à sua direita.
+
+Sintaxe: std::cin >> nome_da_variavel;
+
+3. Rigidez: O Problema dos Espaços e Tipos
+Risco 1: Espaços (String): O comando std::cin >> variavel; é muito rigoroso. Quando o usuário digita um texto, ele para de ler no primeiro espaço ou quebra de linha que encontra.
+
+Exemplo: Se o usuário digitar "João Silva", cin extrairá apenas "João".
+
+Solução: Para ler uma linha de texto completa (incluindo espaços), você deve usar a função std::getline().
+
+Risco 2: Erro de Tipo: Se você declarar uma variável como int (inteiro) e o usuário digitar "ABC", a leitura falhará, e o cin entrará em um estado de erro (fail state), que exige tratamento.
+
+4. Próximo Passo na Prática
+A combinação correta para a maioria das entradas de dados é:
+
+Imprimir a Pergunta: Use std::cout para indicar claramente ao usuário o que deve ser digitado.
+
+Ler a Resposta: Use std::cin (ou std::getline) para extrair e armazenar a resposta na variável correta.
