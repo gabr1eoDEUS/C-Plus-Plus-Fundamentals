@@ -1,0 +1,40 @@
+1. Conceito e Intenção
+Intenção: Conectar ou modificar os resultados booleanos (true/false) produzidos pelos Operadores Relacionais (>, ==, etc.).
+
+Resultado: O resultado de uma expressão lógica é SEMPRE um valor Booleano (true ou false).
+
+2. Operador Lógico AND (E)
+Símbolo: && (Dois "e" comerciais).
+
+Regra (Tabela Verdade): O resultado só é true se AMBAS as condições conectadas forem true. Se qualquer uma for false, o resultado é false.
+
+É a lógica do "Tudo ou Nada".
+
+Exemplo: (idade > 18) && (temHabilitacao)
+
+3. Operador Lógico OR (OU)
+Símbolo: || (Duas barras verticais - pipe).
+
+Regra (Tabela Verdade): O resultado é true se PELO MENOS UMA das condições for true. O resultado só é false se AMBAS forem false.
+
+É a lógica do "Um ou Outro".
+
+Exemplo: (feriado) || (finalDeSemana)
+
+4. Operador Lógico NOT (NÃO)
+Símbolo: ! (Exclamação).
+
+Intenção: Inverte o valor booleano.
+
+!true resulta em false.
+
+!false resulta em true.
+
+Exemplo: !temPermissao (Verifica se NÃO tem permissão).
+
+5. Rigidez: Curto-Circuito (Short-Circuit)
+Conceito: O C++ é eficiente e não avalia o segundo operando se o resultado já estiver garantido pelo primeiro.
+
+Exemplo AND (&&): Se a primeira condição for false, a segunda NÃO É TESTADA, pois o resultado geral já é false.
+
+Exemplo OR (||): Se a primeira condição for true, a segunda NÃO É TESTADA, pois o resultado geral já é true.
