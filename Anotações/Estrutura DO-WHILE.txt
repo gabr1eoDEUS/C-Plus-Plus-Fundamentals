@@ -1,0 +1,23 @@
+1. Conceito e Intenção
+
+A intenção do SWITCH é ser uma alternativa mais limpa e otimizada para longas cadeias de if / else if.
+
+É usado para testar uma única variável contra múltiplos valores discretos (como números inteiros ou caracteres).
+
+2. Sintaxe Rigorosa
+
+A estrutura é: switch (expressao) { case valor1: ... break; default: ... }
+
+2.1. Expressão de Controle: É a variável testada, colocada entre parênteses.
+
+2.2. Case: Define um valor específico. Se o valor da expressão corresponder ao case, o fluxo de execução salta para aquele ponto.
+
+3. Rigidez Crucial: Comando BREAK
+
+3.1. O comando break é FUNDAMENTAL. Ele força o programa a sair imediatamente do bloco switch.
+
+3.2. Falta do Break (Fallthrough): Se o break for omitido, o programa continuará executando o código do próximo case abaixo.
+
+4. Default (Padrão)
+
+O bloco default é opcional e funciona como o else final. É executado se nenhum case corresponder ao valor testado.
