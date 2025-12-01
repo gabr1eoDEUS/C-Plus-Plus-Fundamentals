@@ -1,0 +1,17 @@
+1. Conceito e Intenção
+
+Estes comandos fornecem controle fino sobre as iterações dos laços de repetição (for, while, do-while).
+
+Eles são usados para modificar o fluxo normal do loop sem esperar que a condição de parada seja atingida.
+
+2. Rigidez: Comando BREAK
+
+2.1. Ação: O break ENCERRA IMEDIATAMENTE o laço de repetição mais interno em que está inserido.
+
+2.2. Fluxo: O programa salta para a primeira instrução após o corpo do loop.
+
+3. Rigidez: Comando CONTINUE
+
+3.1. Ação: O continue PULA APENAS A ITERAÇÃO ATUAL do laço.
+
+3.2. Fluxo: O programa ignora o restante do código dentro do corpo do loop para a iteração atual e avança imediatamente para o próximo ciclo (ou para a expressão de Finalização no caso do for).
