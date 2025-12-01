@@ -1,0 +1,19 @@
+1. Conceito do Loop WHILE
+Intenção: Repetir a execução de um bloco de código enquanto uma condição for verdadeira (true).
+
+Pré-Teste: O while é um loop de Pré-Teste. A condição é avaliada ANTES da primeira execução.
+
+2. Tipos de Repetição com WHILE
+Repetição Indeterminada: O número de ciclos não é conhecido (ex: esperar por uma senha, por um valor sentinela, ou por um arquivo).
+
+Repetição Determinada: O número de ciclos é fixo (ex: loop que usa um contador de 1 a 10).
+
+3. Rigidez Crucial: Loop Infinito
+O corpo do loop DEVE sempre conter uma instrução (geralmente um incremento ou uma leitura de dado) que, em algum momento, faça a condição se tornar false.
+
+4. Conversão de Tipos (Type Casting)
+Intenção: Forçar a conversão de um tipo de dado para outro tipo temporariamente dentro de uma expressão.
+
+Uso no WHILE: Essencial para garantir Divisão Decimal precisa, especialmente no cálculo de médias.
+
+Exemplo: ((double) variavel_inteira) / outra_variavel
