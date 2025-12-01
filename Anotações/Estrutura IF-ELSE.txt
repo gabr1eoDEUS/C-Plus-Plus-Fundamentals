@@ -1,22 +1,20 @@
-1. Estrutura de Decisão Binária
-Intenção: Fornecer um caminho alternativo de execução quando a condição if resulta em false.
+1. Conceito de Múltiplas Condições
+Intenção: Controlar o fluxo de execução para decisões que envolvem três ou mais opções (não apenas A ou B).
 
-O if/else é ideal para decisões binárias (duas opções: A ou B).
+Como funciona: O programa testa as condições em sequência.
 
-2. Sintaxe ELSE
-A palavra-chave else é ligada ao if anterior.
+2. Sintaxe Rigorosa
+Início: Começa com um bloco if para a primeira condição.
 
-O bloco else só é executado se a condição do if associado for FALSA.
+Caminhos Intermediários: Segue com um ou mais blocos else if para as condições seguintes.
 
-Fluxo Rigoroso:
+O else if só é avaliado se todas as condições if e else if anteriores forem false.
 
-O programa testa a condição do if.
+Caminho Padrão (Opcional): Termina com um bloco else opcional, que é o caminho de fallback (executado se absolutamente nenhuma condição for true).
 
-Se true, executa o bloco if e pula o else.
+3. Rigidez Crucial: Exclusividade
+Regra: Em uma cadeia if / else if / else, apenas UM ÚNICO BLOCO de código será executado.
 
-Se false, pula o bloco if e executa o bloco else.
+Sequência: Assim que uma condição resulta em true, o bloco correspondente é executado e o programa pula (ignora) todas as verificações else if e o else restante, continuando o código após a estrutura.
 
-3. Rigidez: Uso Obrigatório de Chaves {}
-Regra: O if e o else controlam apenas a primeira instrução que vem depois deles, a menos que você use as chaves {} para definir um bloco de código.
-
-Recomendação: Em C++, o uso das chaves {} é obrigatório (mesmo para uma única linha) para manter a clareza, a consistência e evitar erros lógicos difíceis de depurar.
+Recomendação: Use if / else if para testar faixas de valores (por exemplo, nota A, B, C, D) onde a ordem de verificação é importante.
