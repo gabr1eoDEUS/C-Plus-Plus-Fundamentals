@@ -1,0 +1,26 @@
+1. Operadores Básicos
+Adição: +
+
+Subtração: -
+
+Multiplicação: *
+
+Divisão: /
+
+Módulo (Resto da Divisão): %
+
+2. Rigidez Crucial: Divisão de Inteiros
+Regra: Se AMBOS os operandos forem inteiros (int), o resultado sempre será um inteiro.
+
+O que acontece: A parte decimal é TRUNCADA (descartada, não arredondada).
+
+Exemplo: 10 / 3 resulta em 3.
+
+Solução (Para Decimais): Pelo menos um dos operandos deve ser um ponto flutuante (10.0 / 3 ou 10 / 3.0).
+
+3. Operador Módulo (%)
+Intenção: Retorna o RESTO de uma divisão inteira.
+
+Rigidez: Só pode ser usado com tipos inteiros. Não funciona com float ou double.
+
+Exemplo: 10 % 3 resulta em 1.
