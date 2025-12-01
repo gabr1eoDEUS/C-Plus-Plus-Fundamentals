@@ -1,0 +1,25 @@
+1. Conceito e Intenção
+
+A intenção do FOR é Repetição com quantidade determinada.
+
+É o loop mais usado para contagem, pois agrupa os elementos de controle de forma concisa.
+
+2. Sintaxe Rigorosa (Três Elementos)
+
+A estrutura é: for (Inicialização; Condição; Finalização) { corpo_do_loop }
+
+2.1. Inicialização: Executada apenas uma vez no início. (Ex: int i = 0;).
+
+2.2. Condição: Avaliada ANTES de cada iteração. Se false, o loop termina (Pré-Teste). (Ex: i < 10;).
+
+2.3. Finalização/Incremento: Executada APÓS o corpo do loop em cada iteração. (Ex: i++;).
+
+3. Fluxo de Execução (Ordem)
+
+A ordem rigorosa dos eventos é:
+
+Inicialização -> Condição -> Corpo -> Finalização -> Condição -> Corpo...
+
+4. Rigidez: Escopo Local
+
+A variável declarada na inicialização do for (Ex: int i = 0;) existe SOMENTE dentro do bloco do loop. Ela é destruída ao final do for.
