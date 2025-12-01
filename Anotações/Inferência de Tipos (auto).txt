@@ -1,0 +1,29 @@
+1. O que é Inferência de Tipos?
+Intenção: Permite que você declare uma variável sem especificar explicitamente o tipo de dado. O compilador infere (deduz) o tipo automaticamente a partir do valor usado para a inicialização.
+
+Ferramenta: A palavra-chave auto.
+
+Exemplo:
+
+C++
+
+auto idade = 25;      // O compilador infere 'int'
+auto nome = "Gabriel"; // O compilador infere 'const char*' (C-String)
+auto preco = 9.99;    // O compilador infere 'double' (padrão para decimais)
+2. Rigidez e Imutabilidade do Tipo
+Tipagem Estática Mantida: O uso de auto não transforma o C++ em uma linguagem de tipagem dinâmica. O tipo é inferido apenas uma vez no momento da declaração e não pode mais ser alterado durante a execução.
+
+Exemplo: Após auto idade = 25;, idade é permanentemente um int.
+
+3. Melhores Práticas de Uso (auto Rigoroso)
+O auto é uma ferramenta para simplificar, mas não para esconder informações:
+
+Use auto para Tipos Longos/Complexos: É ideal para tipos complexos onde escrever o nome completo seria muito longo e repetitivo (ex: iteradores de coleções, funções complexas).
+
+Não Use auto para Tipos Primitivos Óbvios: Evite usá-lo para int, double ou bool quando o tipo for claro, pois isso reduz a clareza do código.
+
+Exemplo Ruim: auto i = 10; (O tipo int é mais claro).
+
+Exemplo Bom: auto resultado = funcaoMuitoComplexa(valor); (O nome do tipo deduzido seria enorme).
+
+Rigidez: A inferência de auto exige que a variável seja sempre inicializada. O compilador não pode adivinhar o tipo se não houver um valor inicial.
