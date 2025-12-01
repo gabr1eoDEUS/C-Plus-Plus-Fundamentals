@@ -1,0 +1,35 @@
+1. Conceito e Intenção
+Intenção: Fornecer um atalho compacto e de apenas uma linha para estruturas simples de decisão if/else.
+
+Nome: É chamado de "ternário" porque usa três operandos em sua estrutura.
+
+2. Sintaxe Rigorosa
+A estrutura ternária é rigorosamente definida em três partes separadas por ? e :.
+
+Estrutura: (Condição) ? ValorSeVerdadeiro : ValorSeFalso;
+
+Primeiro Operando (Condição): Uma expressão que retorna um bool (true ou false). Fica antes do ?.
+
+Segundo Operando (Valor True): O valor a ser retornado/atribuído se a condição for true. Fica entre o ? e o :.
+
+Terceiro Operando (Valor False): O valor a ser retornado/atribuído se a condição for false. Fica após o :.
+
+3. Uso Essencial
+Rigidez: O operador ternário DEVE sempre ter um valor de retorno e é tipicamente usado para ATRIBUIÇÃO.
+
+Exemplo de Atribuição (Com int):
+
+int maior = (a > b) ? a : b;
+
+Se a for maior que b, a variável maior recebe a. Caso contrário, maior recebe b.
+
+Exemplo de Atribuição (Com string):
+
+string status = (nota >= 7) ? "Aprovado" : "Reprovado";
+
+Vantagem: Reduz 4 a 5 linhas de um if/else simples para apenas uma linha, melhorando a concisão.
+
+4. Regra de Ouro (Legibilidade)
+Quando Usar: Use ternários apenas para decisões simples de "escolha A ou B".
+
+Quando Evitar: Evite aninhar (colocar um ternário dentro do outro), pois isso prejudica seriamente a legibilidade do código.
