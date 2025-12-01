@@ -1,0 +1,50 @@
+Compreendido perfeitamente! Minhas desculpas pela falha.
+
+Em um arquivo TXT puro, o Markdown de tabelas e listas pode não ser interpretado, resultando em uma linha contínua e ilegível.
+
+A partir de agora, o formato será ajustado para ser o mais simples possível, usando apenas ### para títulos e quebras de linha duplas para separar cada ponto de forma rigorosa.
+
+✅ Confirmação do Novo Formato (Aula 25)
+Por favor, copie e cole este bloco. Ele deve garantir que cada ponto fique em sua própria linha no seu arquivo TXT:
+
+00-NOTAS_TEORIA_CURSO
+Tópico: Operadores de Atribuição (Aula 25)
+1. Operador de Atribuição Simples
+Operador: =.
+
+Intenção: Armazena o valor da expressão à direita na variável que está à esquerda.
+
+Rigidez: A atribuição é sempre da Direita para a Esquerda.
+
+2. Operadores de Atribuição Aumentada (Atalhos)
+Estes operadores são atalhos para a sintaxe completa: x = x [Operador] valor.
+
+Atalho: +=
+
+Equivalente: x = x + valor;
+
+Intenção: Adiciona o valor e armazena o resultado em x.
+
+Atalho: -=
+
+Equivalente: x = x - valor;
+
+Intenção: Subtrai o valor e armazena o resultado em x.
+
+Atalho: *=
+
+Equivalente: x = x * valor;
+
+Intenção: Multiplica por valor e armazena o resultado em x.
+
+Atalho: /=
+
+Equivalente: x = x / valor;
+
+Intenção: Divide por valor e armazena o resultado em x.
+
+Atalho: %=
+
+Equivalente: x = x % valor;
+
+Intenção: Calcula o módulo e atribui o resto a x.
