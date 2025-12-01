@@ -1,0 +1,52 @@
+1. Conceito e Intenção
+Intenção: Comparar dois valores ou expressões.
+
+Resultado: O resultado é SEMPRE um valor Booleano (bool):
+
+true (Verdadeiro, representado por 1)
+
+false (Falso, representado por 0)
+
+2. Tabela de Operadores (Formato TXT Puro)
+Igualdade:
+
+Operador: == (DOIS sinais de igual).
+
+Intenção: Testa se são iguais.
+
+Diferença:
+
+Operador: != (Exclamação e igual).
+
+Intenção: Testa se são diferentes.
+
+Maior Que:
+
+Operador: >
+
+Intenção: Testa se o valor é estritamente maior.
+
+Menor Que:
+
+Operador: <
+
+Intenção: Testa se o valor é estritamente menor.
+
+Maior ou Igual:
+
+Operador: >=
+
+Intenção: Testa se é maior ou igual.
+
+Menor ou Igual:
+
+Operador: <=
+
+Intenção: Testa se é menor ou igual.
+
+3. Rigidez: Cuidado com Igualdade
+ERRO CRUCIAL: NUNCA confunda o operador de Atribuição (=) com o de Igualdade (==).
+
+Atribuição: x = 10; (Muda o valor de x).
+
+Comparação: x == 10 (Pergunta se x é igual a 10).
