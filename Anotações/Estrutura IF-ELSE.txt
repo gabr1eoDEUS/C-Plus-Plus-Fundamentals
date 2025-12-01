@@ -1,0 +1,22 @@
+1. Estrutura de Decisão Binária
+Intenção: Fornecer um caminho alternativo de execução quando a condição if resulta em false.
+
+O if/else é ideal para decisões binárias (duas opções: A ou B).
+
+2. Sintaxe ELSE
+A palavra-chave else é ligada ao if anterior.
+
+O bloco else só é executado se a condição do if associado for FALSA.
+
+Fluxo Rigoroso:
+
+O programa testa a condição do if.
+
+Se true, executa o bloco if e pula o else.
+
+Se false, pula o bloco if e executa o bloco else.
+
+3. Rigidez: Uso Obrigatório de Chaves {}
+Regra: O if e o else controlam apenas a primeira instrução que vem depois deles, a menos que você use as chaves {} para definir um bloco de código.
+
+Recomendação: Em C++, o uso das chaves {} é obrigatório (mesmo para uma única linha) para manter a clareza, a consistência e evitar erros lógicos difíceis de depurar.
