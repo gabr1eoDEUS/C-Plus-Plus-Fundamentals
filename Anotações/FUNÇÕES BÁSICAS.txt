@@ -1,0 +1,21 @@
+1. Conceito Central e Sintaxe
+
+Uma Função é um bloco de código reutilizável. A sintaxe básica é: TipoRetorno Nome(Parâmetros) { corpo }.
+
+A instrução return encerra a função e devolve o valor especificado. Se a função não devolver nada, o tipo de retorno deve ser void.
+
+2. Protótipo e Definição
+
+2.1. Protótipo (Forward Declaration): Declara a assinatura da função (Ex: int nome(int, int);) antes de main(). É necessário quando a definição completa da função aparece após o ponto de chamada (geralmente main).
+
+2.2. Definição: O corpo completo da função, que contém a lógica de execução.
+
+3. Argumentos Padrão (Default)
+
+3.1. Permitem que um parâmetro receba um valor padrão se o argumento for omitido na chamada da função (Ex: void log(int num, bool nl = true)).
+
+3.2. Rigidez: Os argumentos padrão devem ser colocados no final da lista de parâmetros.
+
+4. Funções com Lógica
+
+Funções podem incorporar todas as estruturas de controle de fluxo (if/else, switch, for) para encapsular e retornar um resultado complexo, garantindo que o código em main permaneça limpo e focado na orquestração.
