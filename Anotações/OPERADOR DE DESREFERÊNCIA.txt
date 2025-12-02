@@ -1,0 +1,21 @@
+1. Conceito: Desreferência
+
+Desreferência é o ato de acessar o valor armazenado em um determinado endereço de memória.
+
+O operador usado para desreferência é o asterisco (*).
+
+2. Rigidez e Símbolo (*)
+
+O asterisco (*) tem dois significados cruciais em C++:
+
+2.1. Declaração: Usado na declaração para indicar que uma variável é um Ponteiro (Ex: int* p;).
+
+2.2. Uso (Desreferência): Usado para acessar o valor que está no endereço de memória.
+
+3. Fluxo Complementar
+
+A Desreferência é o inverso do Endereçamento:
+
+Endereçamento (&): Vai do Valor para o Endereço.
+
+Desreferência (*): Vai do Endereço de volta para o Valor.
