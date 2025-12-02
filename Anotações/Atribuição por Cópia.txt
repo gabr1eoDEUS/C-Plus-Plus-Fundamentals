@@ -1,0 +1,21 @@
+1. Conceito e Intenção
+
+A Atribuição por Cópia é o comportamento padrão do C++ para tipos primitivos (int, double, char, etc.).
+
+A intenção é garantir que as variáveis sejam independentes após a atribuição.
+
+2. Ação de Memória
+
+Quando ocorre a atribuição (int b = a;):
+
+2.1. O VALOR da variável de origem (a) é lido.
+
+2.2. O compilador aloca um NOVO ENDEREÇO de memória para a variável de destino (b).
+
+2.3. O valor lido é escrito no novo endereço de b.
+
+3. Rigidez: Independência
+
+3.1. As variáveis de origem e cópia residem em locais de memória totalmente distintos.
+
+3.2. A alteração do valor de uma variável (Ex: b--) NÃO impacta o valor da variável original (a).
