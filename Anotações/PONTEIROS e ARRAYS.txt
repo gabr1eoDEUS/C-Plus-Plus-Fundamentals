@@ -1,0 +1,27 @@
+1. Conceito Central: Ponteiro
+
+Um Ponteiro (*) é uma variável que armazena um endereço de memória.
+
+Seu tipo deve ser definido pelo tipo de dado para o qual ele aponta (Ex: int* armazena o endereço de um int).
+
+2. Declaração e Uso
+
+2.1. Declaração: O asterisco é usado para declarar o ponteiro: Tipo* nomePtr;
+
+2.2. Armazenamento: O ponteiro recebe um endereço de memória usando o operador &: ptr = &variavel;
+
+2.3. Desreferência: O asterisco é usado para acessar o valor no endereço: cout << *ptr;
+
+3. Rigidez: Ponteiro vs. Referência
+
+3.1. Ponteiros: Podem ser inicializados com nullptr e PODEM SER REATRIBUÍDOS para apontar para variáveis diferentes.
+
+3.2. Referências: DEVEM ser inicializadas na declaração e NÃO PODEM ser reatribuídas. Elas agem apenas como um apelido.
+
+4. Ponteiros e Arrays
+
+4.1. Equivalência: O nome de um Array (Ex: arr) é um ponteiro constante para o seu primeiro elemento (&arr[0]).
+
+4.2. Aritmética de Ponteiros: Operações de incremento/decremento (ptr++) movem o ponteiro pelo TAMANHO DO TIPO DE DADO na memória (Ex: 4 bytes para int), não apenas por 1 byte.
+
+4.3. Acesso: É possível usar notação de array para acessar o valor apontado: ptr[0] é equivalente a *ptr.
