@@ -1,0 +1,15 @@
+1. Conceito Central: Persistência Local
+
+Uma Variável Estática (static) declarada dentro de uma função possui persistência global, mas visibilidade local.
+
+2. Rigidez: Propriedades
+
+2.1. Inicialização Única: A variável estática é inicializada APENAS NA PRIMEIRA VEZ que a função é executada.
+
+2.2. Persistência: O seu valor é PRESERVADO (mantido) entre as chamadas da função, diferente das variáveis locais comuns que são destruídas.
+
+2.3. Escopo Local: A variável SÓ PODE SER ACESSADA dentro da função onde foi declarada (encapsulamento).
+
+3. Uso Principal
+
+Criar contadores ou geradores de ID que precisam manter o estado do último valor entre múltiplas invocações da função.
