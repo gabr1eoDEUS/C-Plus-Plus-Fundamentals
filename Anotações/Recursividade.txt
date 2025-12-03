@@ -1,0 +1,15 @@
+1. Conceito Central: Auto-referência
+
+Recursividade é quando uma função chama a si mesma (direta ou indiretamente) para resolver um problema dividindo-o em partes menores, mas estruturalmente semelhantes.
+
+2. Componentes Rigorosos
+
+Uma função recursiva deve sempre ter dois componentes:
+
+2.1. Base Case (Caso Base): A condição que PARA a recursão e retorna um valor trivial (Ex: return 1;). Sem ela, ocorre stack overflow.
+
+2.2. Recursive Step (Passo Recursivo): A parte onde a função chama a si mesma, mas com uma entrada reduzida (Ex: n - 1), movendo-se em direção ao caso base.
+
+3. Fluxo de Execução
+
+A execução recursiva utiliza a Pilha de Chamada (Call Stack) para armazenar o estado de cada chamada. Os resultados são calculados e desempilhados na ordem inversa (LIFO), assim que o caso base é atingido.
