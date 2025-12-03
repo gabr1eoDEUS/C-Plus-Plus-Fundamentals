@@ -1,0 +1,19 @@
+1. Conceito Central: Efeito Colateral
+
+O modo como um argumento é passado para uma função define se a função pode ou não alterar a variável original (o que é chamado de efeito colateral).
+
+2. Passagem por Cópia (Valor)
+
+2.1. Ação: A função recebe uma cópia independente do valor do argumento.
+
+2.2. Rigidez: Alterações dentro da função não afetam a variável original, pois elas residem em endereços de memória distintos.
+
+2.3. Uso: Ideal para evitar efeitos colaterais indesejados.
+
+3. Passagem por Referência
+
+3.1. Ação: A função recebe um apelido (Referência &) que aponta para o mesmo endereço de memória da variável original.
+
+3.2. Rigidez: Alterações dentro da função afetam a variável original.
+
+3.3. Uso: Necessário quando se deseja que a função modifique a variável original (Ex: trocando valores) ou para evitar a cópia de grandes estruturas de dados (otimização).
