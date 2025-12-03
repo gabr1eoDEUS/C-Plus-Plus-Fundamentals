@@ -1,0 +1,19 @@
+1. Conceito Central: Alias de Tipos
+
+Typedef (ou o moderno using) é uma ferramenta para criar apelidos ou sinônimos para tipos de dados existentes. O novo nome pode ser usado em qualquer lugar onde o nome do tipo original seria usado.
+
+2. Propósito Rigoroso
+
+2.1. Legibilidade: Simplificar tipos complexos (como ponteiros para funções ou tipos de templates) em um único nome compreensível (Ex: id).
+
+2.2. Abstração: Abstrair o tipo de dado real, tornando o código mais fácil de ser modificado posteriormente.
+
+3. Sintaxe em C++
+
+3.1. Antiga (typedef): typedef TipoExistente NovoNome; (Ex: typedef int id;)
+
+3.2. Moderna (using): using NovoNome = TipoExistente; (Ex: using counter = long;)
+
+Rigidez: Preferência
+
+A sintaxe using é a forma preferida no C++ moderno, pois oferece maior clareza e flexibilidade, especialmente em contextos que envolvem templates.
