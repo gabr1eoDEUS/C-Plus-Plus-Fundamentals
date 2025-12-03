@@ -1,0 +1,17 @@
+1. Conceito Central: Escopo
+
+Escopo (Scope) define a visibilidade e o tempo de vida de uma variável.
+
+1.1. Escopo Global: Variável declarada fora de qualquer função. Existe durante todo o tempo de vida do programa e é visível para todas as funções.
+
+1.2. Escopo de Função: Variável declarada dentro de uma função. Existe apenas enquanto essa função está em execução.
+
+1.3. Escopo de Bloco: Variável declarada dentro de um bloco {}. Existe apenas dentro daquele bloco, e não pode ser acessada fora dele.
+
+2. Pilha de Execução (Call Stack)
+
+A Pilha de Execução (Call Stack) é a estrutura de memória usada pelo programa para gerenciar a ordem das chamadas de função.
+
+2.1. Estrutura LIFO: Funciona no modelo LIFO (Last-In, First-Out). Cada chamada de função (com suas variáveis locais) é um Frame que é empilhado.
+
+2.2. Fluxo: Quando uma função é chamada, ela é empilhada. Quando a função retorna, ela é desempilhada e a execução volta para a função anterior.
