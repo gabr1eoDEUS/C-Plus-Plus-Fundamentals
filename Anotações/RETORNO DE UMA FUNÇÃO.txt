@@ -1,0 +1,17 @@
+1. Rigidez: Propósito do return
+
+A instrução return tem o propósito duplo de:
+
+Devolver um valor (se o tipo de retorno não for void).
+
+Encerrar IMEDIATAMENTE a execução da função e retornar o controle para a função chamadora.
+
+2. Múltiplos Pontos de Saída
+
+É permitido usar múltiplos return statements dentro de uma função, desde que estejam em ramos de execução mutuamente exclusivos (como em if/else).
+
+3. Rigidez: Regras de Retorno
+
+3.1. Um Valor: Uma função pode ter múltiplos return statements, mas só pode retornar um único valor por chamada.
+
+3.2. Saída Antecipada: Em funções void, o return; é usado para forçar uma saída antecipada (early exit) de um bloco de código, ignorando as instruções subsequentes.
