@@ -1,0 +1,21 @@
+1. Conceito Central: Endereço de Função
+
+Um Ponteiro de Função armazena o endereço de memória onde o código binário de uma função reside.
+
+2. Rigidez: Sintaxe do Alias
+
+A sintaxe de um ponteiro de função deve incluir o tipo de retorno e os tipos de parâmetro.
+
+Sintaxe: using NomeAlias = TipoRetorno (*NomePonteiro)(TiposParâmetros);
+
+Exemplo: using binaryop = int(*)(int, int);
+
+3. Mecanismo (Passagem e Execução)
+
+3.1. Passagem: Ao passar o nome de uma função (Ex: add) como argumento, o C++ o converte implicitamente para o seu endereço de memória (Ponteiro de Função).
+
+3.2. Execução: A chamada deve ser feita por meio da desreferência do ponteiro: (*nomePtr)(arg1, arg2);
+
+4. Uso Principal
+
+Permite que uma função seja genericamente parametrizada com diferentes comportamentos, o que é fundamental para callbacks e design patterns avançados.
