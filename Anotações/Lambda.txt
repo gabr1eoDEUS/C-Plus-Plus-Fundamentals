@@ -1,0 +1,13 @@
+1. Conceito Central: Funções Anônimas
+
+Uma Função Lambda é uma função concisa e anônima (sem nome), geralmente definida no local onde é imediatamente utilizada. São a forma moderna de criar functors e callbacks.
+
+2. Sintaxe Rigorosa
+
+A estrutura básica é: [Captura](Parâmetros) -> TipoRetorno { Corpo }
+
+2.1. [Captura]: A lista de captura define quais variáveis do escopo externo a lambda pode acessar. 2.2. (Parâmetros): Lista de argumentos (se houver). 2.3. Tipo de Retorno: Pode ser omitido se o compilador puder deduzi-lo a partir do corpo da função.
+
+3. Rigidez: Vínculo com Ponteiros de Função
+
+Uma lambda sem lista de captura ([]) possui uma propriedade crucial: ela pode ser implicitamente convertida (decay) para um Ponteiro de Função (Ex: int(*)(int, int)), permitindo que seja usada em código legado ou funções que esperam Ponteiros de Função.
