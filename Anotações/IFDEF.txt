@@ -1,0 +1,21 @@
+1. Conceito Central: Inclusão Seletiva
+
+A Compilação Condicional é a capacidade do pré-processador de incluir ou excluir blocos inteiros de código-fonte antes que o compilador os veja. Isso permite construir diferentes versões do programa a partir do mesmo código.
+
+2. Diretivas Rigorosas
+
+#ifdef: Inclui o bloco se a macro estiver definida (qualquer valor).
+
+#ifndef: Inclui o bloco se a macro NÃO estiver definida. (Usado principalmente para Include Guards).
+
+#if: Inclui o bloco se a expressão booleana for verdadeira (avaliação de valor).
+
+#else: Bloco incluído se a condição acima for falsa.
+
+#endif: Marca o fim do bloco de compilação condicional.
+
+3. Uso Principal
+
+Controle de Versão/Debug: Ligar ou desligar recursos de logging ou debug na compilação final.
+
+Include Guards: Usado com #ifndef para prevenir inclusão múltipla de arquivos (.h).
