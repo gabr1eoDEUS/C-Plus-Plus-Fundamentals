@@ -1,0 +1,15 @@
+1. Conceito Central: Pré-processamento
+
+O #include é uma diretiva do pré-processador (fase 1 da compilação). Ele não é uma instrução C++ e não segue as regras de escopo do C++.
+
+2. Rigidez: Substituição Literal
+
+2.1. O pré-processador encontra a linha #include e a substitui LITERALMENTE (copia e cola o texto) pelo conteúdo do arquivo especificado.
+
+2.2. O compilador (fase 2) só vê o código DEPOIS que todas as substituições de texto do #include foram feitas. Isso pode levar a erros de sintaxe ou estrutura se o arquivo incluído não for escrito corretamente.
+
+3. Sinais de Busca
+
+3.1. < > (Ângulos): Usado para procurar arquivos nos diretórios do compilador (Bibliotecas Padrão, Ex: <iostream>).
+
+3.2. " " (Aspas): Usado para procurar arquivos no diretório do projeto atual (Header files do usuário).
