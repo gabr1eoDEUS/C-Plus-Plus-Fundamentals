@@ -1,0 +1,15 @@
+TÓPICO: ARRAY MULTIDIMENSIONAL (Matrizes) (Aula 86)
+
+1. Conceito Central: Múltiplos Subscritos
+Um Array Multidimensional é um array cujos elementos são outros arrays. O mais comum é a Matriz (bidimensional).
+
+2. Rigidez: Sintaxe
+* Declaração: A sintaxe é Tipo Nome[N_Linhas][N_Colunas]....
+* Exemplo 2D: int matriz[3][4]; (3 linhas, 4 colunas).
+
+3. Armazenamento
+* Memória Contígua: Em C++, a matriz é armazenada na memória RAM como um único bloco sequencial e contíguo, organizado em ordem de linha principal (Row-Major Order).
+* Acesso: Para acessar um elemento, usa-se a sintaxe matriz[índice_linha][índice_coluna].
+
+4. Inicialização
+* A inicialização com listas aninhadas { {1, 2}, {3, 4} } é a forma mais clara de representar a estrutura visual da matriz.
