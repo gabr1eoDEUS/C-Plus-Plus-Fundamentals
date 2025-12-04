@@ -1,0 +1,18 @@
+TÓPICO: ITERANDO SOBRE ARRAY (Loops) (Aulas 84 & 85)
+
+1. Conceito Central: Percorrendo Elementos
+A iteração é o processo de acessar e processar cada elemento de um array sequencialmente.
+
+2. Método Tradicional (Index-Based - A84)
+* Sintaxe: for (int i = 0; i < tamanho; i++) { ... arr[i] ... }
+* Rigidez: Requer o cálculo preciso do tamanho (sizeof()) para evitar erros de limites (Out of Bounds).
+* Uso: Necessário quando se precisa acessar o índice i ou modificar o valor do índice i.
+
+3. Método Range-Based (For Each - A84/A85)
+* Sintaxe: for (Tipo elemento : array) { ... }
+* Vantagem: Mais conciso, legível e seguro, eliminando a necessidade de gerenciar índices.
+
+4. Formas de Iteração Range-Based (A85)
+* Por Cópia (Valor): for(Tipo elemento : array) { ... }. A variável 'elemento' recebe uma cópia, as alterações NÃO AFETAM o array original.
+* Por Referência Modificável: for(auto &elemento : array) { ... }. Permite modificar diretamente o elemento no array original (melhor performance para tipos complexos).
+* Por Referência Constante: for(auto const &elemento : array) { ... }. Método MAIS EFICIENTE para APENAS LEITURA, pois evita a cópia e garante que o array não será alterado.
