@@ -1,0 +1,15 @@
+1. Conceito Central: Transformação
+
+O Processo de Compilação transforma o seu código-fonte legível (C++) em um programa executável que o computador pode rodar.
+
+2. Fases Rigorosas (O Pipeline)
+
+O processo se divide em quatro fases principais executadas pelo compilador:
+
+2.1. Pré-processamento: O pré-processador executa diretivas que começam com # (Ex: #include, #define). Ele substitui o código ou inclui arquivos (Ex: substitui #include <iostream> pelo conteúdo do arquivo). Resultado: Um único arquivo de código-fonte expandido.
+
+2.2. Compilação: O compilador traduz o código C++ expandido em Código Assembly (código específico da arquitetura do processador).
+
+2.3. Assembly: O assembler converte o Código Assembly em Código Objeto (Objetos Binários, com extensão .o ou .obj). Este arquivo contém o código de máquina, mas ainda não é executável, pois faltam as funções externas (bibliotecas).
+
+2.4. Ligação (Linking): O Linker (Ligador) combina o seu Código Objeto com os Códigos Objeto das bibliotecas externas (Ex: iostream) para resolver todas as referências. Resultado: O Executável final.
