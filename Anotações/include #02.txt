@@ -1,0 +1,21 @@
+1. Conceito Central: Prevenção de Redefinição
+
+O #include é um substituto textual (Aula 72). Se um arquivo de cabeçalho (.h) for incluído múltiplas vezes, o compilador verá o mesmo protótipo ou definição de novo, resultando em um erro fatal de redefinição.
+
+2. Solução Rigorosa: Include Guards
+
+A solução padrão para proteger arquivos de cabeçalho é usar Include Guards (Guardas de Inclusão):
+
+Estrutura: Usa três diretivas do pré-processador:
+
+#ifndef NOME_UNICO_H (Se NÃO estiver definido...)
+
+#define NOME_UNICO_H (...então defina o nome único e continue o processamento.)
+
+#endif (Fim do bloco condicional.)
+
+Mecanismo: Garante que o conteúdo do arquivo de cabeçalho só seja processado uma única vez pelo pré-processador.
+
+3. Alternativa Moderna
+
+Alguns compiladores modernos aceitam a diretiva concisa: #pragma once no topo do arquivo. É mais simples, mas não é um padrão C++ (embora seja amplamente suportado).
