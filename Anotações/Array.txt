@@ -1,0 +1,17 @@
+TÓPICO: ARRAY (Básico e Inicialização) (Aulas 82 & 83)
+
+1. Conceito Central: Estrutura Contígua
+Um Array é uma coleção de elementos do mesmo tipo armazenados em um bloco de memória contígua (sequencial).
+
+2. Rigidez: Propriedades Fundamentais
+* Tamanho Fixo: O tamanho é definido em tempo de compilação e não pode ser alterado dinamicamente.
+* Acesso O(1): O acesso a qualquer elemento pelo índice é imediato e constante, devido à contiguidade.
+* Indexação: Usa-se o índice 0 para o primeiro elemento e N-1 para o último.
+
+3. Inicialização e Tamanho
+* Inicialização por Lista: Pode ser inicializado na declaração usando chaves { }. Ex: int arr[] = {10, 20}.
+* Tamanho Implícito: Se o tamanho for omitido ([]), o compilador o calcula automaticamente.
+* Cálculo Rigoroso de Tamanho: O número de elementos em um array estático é calculado por: sizeof(array_total) / sizeof(primeiro_elemento).
+
+4. Risco Crítico
+* Array Out of Bounds: Acessar um índice fora do intervalo permitido ([0, N-1]) não causa erro de compilação, mas resulta em Comportamento Indefinido (Undefined Behavior), pois acessa memória não alocada.
