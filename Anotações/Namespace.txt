@@ -1,0 +1,15 @@
+1. Conceito Central: Contêiner de Identificadores
+
+Um Namespace (Espaço de Nomes) é um contêiner declarativo que agrupa logicamente um conjunto de identificadores (variáveis, funções, classes, etc.).
+
+2. Propósito Rigoroso
+
+O uso primário do namespace é evitar a colisão de nomes (name collision) entre diferentes bibliotecas. Ele isola os identificadores, garantindo que funcao_x da Biblioteca A seja distinta de funcao_x da Biblioteca B.
+
+3. Sintaxe e Acesso
+
+Declaração: namespace MeuNome { // código aqui }.
+
+Acesso Qualificado: A forma mais segura de acessar um identificador. Ex: std::cout (acessando cout dentro do namespace std).
+
+Diretiva using: Traz todos os identificadores de um namespace para o escopo global. Ex: using namespace std;. É desencorajada em código grande, pois anula o propósito de isolamento.
