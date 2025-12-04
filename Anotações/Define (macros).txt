@@ -1,0 +1,19 @@
+1. Conceito Central: Substituição Simples
+
+O #define é uma diretiva do pré-processador que cria Macros. O pré-processador substitui LITERALMENTE o NomeDaMacro pelo seu Valor em todo o código.
+
+2. Tipos e Uso
+
+2.1. Macros Constantes: #define NOME VALOR.
+
+2.2. Macros Funcionais: #define NOME(args) EXPRESSÃO.
+
+3. Rigidez: Riscos e Melhores Práticas
+
+3.1. Falta de Tipo: Macros não têm tipo (elas são apenas texto puro), o que pode levar a erros em tempo de compilação.
+
+3.2. Pitfall de Parênteses: O pré-processador não respeita a precedência de operadores. Melhor Prática Rigorosa: Sempre envolva cada argumento individual e a expressão inteira em parênteses. Ex: #define SOMA(a, b) ((a) + (b)).
+
+4. Preferência Moderna
+
+Em C++ moderno, prefere-se usar const ou constexpr (para constantes) e inline functions (para funções curtas), pois elas são mais seguras e fornecem checagem de tipo e escopo, ao contrário das macros.
