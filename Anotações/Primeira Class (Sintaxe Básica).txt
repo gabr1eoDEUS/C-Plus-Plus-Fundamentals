@@ -1,0 +1,12 @@
+TÓPICO: PRIMEIRA CLASSE (Sintaxe Básica)
+
+1. Conceito Central: Classe vs Objeto
+A CLASSE é o template (molde ou planta). O OBJETO é a instância (o dado real) criado a partir desse molde.
+
+2. Sintaxe Rigorosa
+* Definição: Usa-se a palavra-chave 'class Nome { ... };'. A definição deve terminar com ponto e vírgula (;).
+* Atributos: São as variáveis (dados) que definem o estado do objeto.
+
+3. Modificador de Acesso (Introdução)
+* public:: O modificador 'public' torna os atributos e métodos acessíveis de qualquer lugar do código (fora da classe), permitindo a manipulação dos dados do objeto na main().
+* Acesso: Para acessar um atributo usa-se o operador ponto (.). Ex: objeto.atributo = valor.
