@@ -1,0 +1,14 @@
+TÓPICO: VECTOR NA PRÁTICA (Função Map)
+
+1. Conceito Central: Funções como Dados
+A Programação Funcional permite usar funções como argumentos para outras funções (Higher-Order Functions), como visto no padrão Map.
+
+2. Padrão Map (Mapeamento)
+O Map aplica uma operação (a função passada como argumento) a TODOS os elementos de uma coleção (vector), retornando uma NOVA coleção com os resultados.
+
+3. Mecanismos Rigorosos (C++)
+* Função Pointer: É o tipo de dado que armazena o endereço de uma função. Sintaxe: Tipo_Retorno (*Nome)(Lista_Parametros).
+* Lambda Expression (C++11): Permite criar funções anônimas (inline). Sintaxe básica: auto nome = [](Parametros) { return Expressão; }; Lambdas sem captura podem ser usadas como Function Pointers.
+
+4. Aplicação no Vector
+A combinação de Vector + Map/Lambda permite aplicar lógica complexa de forma concisa e clara em toda a coleção, evitando loops manuais complexos.
