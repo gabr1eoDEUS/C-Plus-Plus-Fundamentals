@@ -1,0 +1,18 @@
+TÓPICO: INTRODUÇÃO AO VECTOR (STL)
+
+1. Conceito Central: Contêiner Dinâmico
+O std::vector é uma classe template da STL (Standard Template Library) que substitui os arrays estáticos (tipo C).
+
+2. Rigidez: Vantagens sobre Array
+* Tamanho Dinâmico: Pode aumentar ou diminuir de tamanho durante a execução do programa (alocação dinâmica), resolvendo a limitação de tamanho fixo do array.
+* Segurança: Gerencia a memória automaticamente (não há risco de vazamento).
+* Memória Contígua: Assim como o array, armazena seus elementos em memória contígua, permitindo acesso rápido por índice O(1).
+
+3. Uso Essencial
+* Inclusão: Requer #include <vector>.
+* Adição de Elemento: vector.push_back(valor) adiciona um elemento ao final.
+* Acesso: Suporta acesso por índice [] e a função at() (que checa limites de segurança).
+
+4. Iteradores
+* Conceito: Iteradores são objetos que agem como ponteiros para elementos dentro do contêiner.
+* Uso: vector.begin() aponta para o primeiro elemento, e vector.end() aponta para a posição logo após o último elemento. São fundamentais para a iteração genérica na STL.
