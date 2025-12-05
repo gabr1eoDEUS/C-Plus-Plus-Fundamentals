@@ -1,0 +1,15 @@
+TÓPICO: PRINCIPAIS FUNÇÕES DO VECTOR
+
+1. Funções de Modificação (Dinâmica)
+* push_back(val): Adiciona um elemento no final (aumenta o size()).
+* pop_back(): Remove o elemento do final (diminui o size()).
+* assign(N, val): Inicializa o vetor com N cópias do val.
+* clear(): Remove todos os elementos; size() se torna zero.
+* erase(iter): Remove o elemento na posição especificada pelo Iterador.
+
+2. Funções de Informação e Acesso
+* size(): Retorna o número atual de elementos.
+* capacity(): Retorna o número máximo de elementos que pode armazenar sem realocar memória.
+* front(): Retorna uma referência ao primeiro elemento.
+* back(): Retorna uma referência ao último elemento.
+* empty(): Retorna true se o vetor estiver vazio (size() == 0).
