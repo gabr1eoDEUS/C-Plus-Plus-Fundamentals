@@ -1,0 +1,12 @@
+TÓPICO: STRING COMO ARRAY DE CARACTERES
+
+1. Conceito Central: Sequência de Caracteres
+A std::string é uma classe da STL (Standard Template Library) projetada para gerenciar sequências de caracteres de forma segura e eficiente.
+
+2. Rigidez: Interface Array-Like
+* Memória Contígua: Os caracteres dentro de um std::string são armazenados em posições de memória contíguas, garantindo acesso rápido.
+* Acesso por Índice: Permite o acesso direto a qualquer caractere individual usando o operador de subscrito [] (Zero-Based Indexing).
+* Iteração: Pode ser percorrida usando o Range-Based For Loop, assim como um array.
+
+3. Contraste com C-String
+* A std::string gerencia automaticamente o tamanho (o tamanho é dinâmico, ao contrário do array char[] tradicional) e a terminação nula, sendo muito mais segura e de alto nível que a C-string (char* ou char[]).
