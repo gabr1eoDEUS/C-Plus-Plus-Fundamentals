@@ -1,0 +1,9 @@
+TÓPICO: CLASSE VS OBJETO
+
+1. CLASSE (O Molde/Planta)
+* O que é: É uma definição, um template abstrato. Define o tipo de dado customizado e os atributos (o que o objeto possui) e métodos (o que o objeto pode fazer).
+* Memória: A classe não ocupa espaço na memória RAM em tempo de execução.
+
+2. OBJETO (A Instância/Realidade)
+* O que é: É o dado real criado a partir da classe (o molde). O objeto é a realização concreta da classe.
+* Memória: Cada objeto ocupa espaço na memória (Stack ou Heap) e possui sua própria cópia dos atributos definidos na classe.
