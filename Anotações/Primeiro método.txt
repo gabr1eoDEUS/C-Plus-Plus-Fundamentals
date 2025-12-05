@@ -1,0 +1,14 @@
+TÓPICO: PRIMEIRO MÉTODO (Comportamento)
+
+1. Conceito Central: Método
+Um Método é uma função declarada DENTRO da definição de uma Classe. Ele define o COMPORTAMENTO (o que o objeto pode fazer).
+
+2. Rigidez do Método
+* Acesso Implícito: O método tem acesso direto e implícito a todos os ATRIBUTOS do objeto (instância) que o chamou.
+* Definição: Métodos são declarados dentro da classe (geralmente sob o modificador 'public').
+
+3. Uso
+* Chamada: Para executar um método, usa-se o operador ponto (.). Ex: objeto.metodo(argumentos).
+
+4. Encapsulamento
+Com métodos, a classe começa a encapsular não apenas dados, mas também a lógica para operar sobre esses dados.
